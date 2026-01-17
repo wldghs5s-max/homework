@@ -10,7 +10,7 @@ function setListenerToCard(){
             setTimeout(() => {
      
             temp.classList.toggle("flip");
-            } , 3000 );
+            } , 5000 );
         });
     }
 }
@@ -20,8 +20,8 @@ const main = document.querySelector("main");
 
 function generateCardList(){
     const cardCnt = document.querySelector("#cardCnt").value;
-    if(cardCnt > 50){
-        alert("최대 50개 ,,,개발자 괴롭히기를 멈춰주세요 ,,")
+    if(cardCnt > 30){
+        alert("최대 30개 까지 생성가능")
         return;
     }
     main.innerHTML = "";
@@ -37,8 +37,8 @@ function generateCardList(){
         main.innerHTML += `
             <div class="card-area">
                     <div class="card">
-                    <div class="card-back">${temp}</div>
-                    <div class="card-front">?</div>
+                    <div class="card-back"><img src="../static/${temp}.jpg" alt="" width="80px" height="108px"></div>
+                    <div class="card-front"><img src="../static/front.jpg" alt="" width="80px" height="108px"></div>
                 </div>
             </div>
 `;

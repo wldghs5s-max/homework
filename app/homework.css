@@ -1,7 +1,6 @@
 .card-area{
     width: 80%;
     height: 90%;
-    border: 3px solid black;
 }
 
 .card {
@@ -22,7 +21,6 @@
     align-items: center;
     font-size: 32px;
     font-weight: 700;
-    border-radius: 15px;
 }
 
 .card-front{
